@@ -1,0 +1,122 @@
+.navbar {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    color: #111111;
+    font-family: 'Archivo', sans-serif;
+
+    &.navbar-desplegado {
+        box-shadow: 0 2px 4px #0000004A;
+    }
+
+    &__menu {
+        display: inline-block;
+        width: 18px;
+        margin-right: 2rem;
+        vertical-align: middle;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        text-align: left;
+        position: relative;
+
+        &__icon {
+            display: inline-block;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111111;
+            vertical-align: middle;
+            margin-right: 1rem;
+            padding: 10px 10px;
+            box-shadow: 0px 4px 10px 1px #8B8B8B40;
+            text-align: center;
+        }
+
+        &__text {
+            display: inline-block;
+            letter-spacing: 1.5px;
+            vertical-align: middle;
+            text-align: left;
+            width: 50%;
+
+            &__hotel {
+                display: block;
+                font-size: 0.7rem;
+                font-weight: 700;
+            }
+
+            &__miranda {
+                display: block;
+                font-size: 0.7rem;
+                color: #111111;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__iconos {
+        margin-top: 0.3rem;
+        display: inline-block;
+        float: right;
+        text-align: center;
+
+        .navbar__icono {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 1rem;
+            margin-right: 0.2rem;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    }
+
+    &__desplegable {
+        margin-top: 0.2rem;
+        margin-bottom: 1.4rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &.activo {
+            display: block;
+            opacity: 1; 
+            visibility: visible;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                text-align: left;
+                a {
+                    font-size: 1rem;
+                    padding-top: 1.5rem;
+                    padding-bottom: 0.2rem;
+                    padding-left: 1.2rem;
+                    color: #111111;
+                    text-decoration: none;
+                    font-weight: bold;
+                    display: block;
+                }
+            }
+        }
+    }
+}

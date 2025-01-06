@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.navbar {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  color: #111111;
+  font-family: "Archivo", sans-serif;
+}
+.navbar.navbar-desplegado {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2901960784);
+}
+.navbar__menu {
+  display: inline-block;
+  width: 18px;
+  margin-right: 2rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.navbar__menu img {
+  width: 100%;
+}
+.navbar__logo {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+}
+.navbar__logo__icon {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111111;
+  vertical-align: middle;
+  margin-right: 1rem;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 10px 1px rgba(139, 139, 139, 0.2509803922);
+  text-align: center;
+}
+.navbar__logo__text {
+  display: inline-block;
+  letter-spacing: 1.5px;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+}
+.navbar__logo__text__hotel {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.navbar__logo__text__miranda {
+  display: block;
+  font-size: 0.7rem;
+  color: #111111;
+  font-weight: 400;
+}
+.navbar__iconos {
+  margin-top: 0.3rem;
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+.navbar__iconos .navbar__icono {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.navbar__desplegable {
+  margin-top: 0.2rem;
+  margin-bottom: 1.4rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.navbar__desplegable.activo {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.navbar__desplegable ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar__desplegable ul li {
+  text-align: left;
+}
+.navbar__desplegable ul li a {
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1.2rem;
+  color: #111111;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}/*# sourceMappingURL=styles.css.map */
