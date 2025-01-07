@@ -4,7 +4,9 @@
 .navbar {
   width: 100%;
   display: block;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   padding: 1rem;
   background-color: #FFFFFF;
   color: #111111;
@@ -85,7 +87,6 @@
   z-index: 5;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
 }
 .navbar__desplegable.activo {
   display: block;
@@ -109,6 +110,305 @@
   text-decoration: none;
   font-weight: bold;
   display: block;
+}
+
+.footer {
+  margin-top: 10rem;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.footer__background {
+  opacity: 2%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer__title {
+  display: inline-block;
+  padding: 1rem;
+}
+.footer__title__logo {
+  display: inline-block;
+  text-align: center;
+  background-color: #BEAD8E;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 0px 1rem 1.5rem 0px rgba(139, 139, 139, 0.1490196078);
+}
+.footer__title__logo__content {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 700;
+  line-height: 2.7rem;
+  padding: 0.4rem;
+}
+.footer__title__text {
+  display: inline-block;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 2.6px;
+  font-family: "Archivo";
+}
+.footer__title__text__hotel {
+  font-weight: 700;
+}
+.footer__title__text__miranda {
+  font-weight: 400;
+}
+.footer__text {
+  padding: 2rem 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #777777;
+  font-family: "Archivo";
+}
+.footer__social {
+  display: block;
+  padding-left: 1.2rem;
+}
+.footer__social__item {
+  display: inline-block;
+  background: #F8F8F8;
+  padding: 0.5rem;
+  margin-right: 0.6rem;
+}
+.footer__services__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #222222;
+  padding: 1.5rem 1rem;
+  padding-top: 2rem;
+}
+.footer__services__lista {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  padding: 0 1rem;
+}
+.footer__services__lista__item {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #777777;
+}
+.footer__services__lista__item:nth-child(-n+6) {
+  grid-column: 1;
+}
+.footer__services__lista__item:nth-child(7) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.footer__services__lista__item:nth-child(8) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.footer__services__lista__item:nth-child(9) {
+  grid-column: 2;
+  grid-row: 3;
+}
+.footer__services__lista__item:nth-child(10) {
+  grid-column: 2;
+  grid-row: 4;
+}
+.footer__contact-us {
+  padding-top: 1.5rem;
+}
+.footer__contact-us__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #222222;
+  padding: 1rem 1rem;
+  padding-bottom: 2.5rem;
+}
+.footer__contact-us__item {
+  display: inline-block;
+  padding-bottom: 2.75rem;
+}
+.footer__contact-us__item__icon {
+  display: inline-block;
+  padding-left: 1rem;
+}
+.footer__contact-us__item__info {
+  display: inline-block;
+  padding-left: 1rem;
+}
+.footer__contact-us__item__info__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+.footer__contact-us__item__info__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  padding-top: 0.2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #777777;
+}
+.footer__copyright {
+  display: block;
+  text-align: start;
+  padding-top: 1.3rem;
+  padding-left: 1.3rem;
+  padding-bottom: 1.1rem;
+  background-color: #F8F8F8;
+}
+.footer__copyright__info {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.15rem;
+  letter-spacing: -0.5px;
+}
+.footer__copyright__info__separator {
+  padding: 0 0.8rem;
+}
+.footer__copyright__info-name {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.15rem;
+  letter-spacing: -0.5px;
+  padding-bottom: 1.8rem;
+}
+
+.ultimate {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  color: #FFFFFF;
+  margin-top: 4.5rem;
+  padding: 4.6rem 1.2rem 0;
+}
+.ultimate__title {
+  font-family: "Archivo";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 2.8px;
+  margin-bottom: 26px;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.ultimate__description {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -1.2px;
+  color: #FFFFFF;
+  margin-bottom: 2.9rem;
+}
+.ultimate__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.ultimate__nav__links {
+  background-color: #FFFFFF;
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.ultimate__nav__links a:nth-child(1) {
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+}
+.ultimate__nav__links a:nth-child(2) {
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  color: #BEAD8E;
+  text-decoration: none;
+}
+
+.roomsPage {
+  padding: 3rem 1.2rem 0;
+}
+.roomsPage__image img {
+  width: 100%;
+}
+.roomsPage__iconos {
+  text-align: center;
+}
+.roomsPage__iconos__image {
+  position: relative;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+.roomsPage__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -0.72px;
+  color: #222222;
+  text-align: center;
+  margin-top: -1.5rem;
+}
+.roomsPage__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 24px;
+  color: #777777;
+  text-align: center;
+  padding: 0 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.roomsPage__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.roomsPage__info p:nth-child(1) {
+  font-family: "Archivo", sans-serif;
+  font-style: bold;
+  font-size: 1rem;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: top;
+  color: #BEAD8E;
+  font-weight: bold;
+}
+.roomsPage__info p:nth-child(2) {
+  font-family: "Archivo", sans-serif;
+  font-style: bold;
+  font-size: 1rem;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: top;
+  color: #BEAD8E;
+  color: #BDBDBD;
+  font-weight: bold;
+  margin-bottom: 3.2rem;
 }
 
 html,

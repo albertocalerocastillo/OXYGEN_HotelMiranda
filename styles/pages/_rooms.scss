@@ -1,0 +1,99 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.ultimate {
+    display: flex;
+    flex-direction: column;
+    background-color: $gris;
+    color: #FFFFFF;
+    margin-top: 4.5rem; 
+    padding: 4.6rem 1.2rem 0;
+
+    &__title {
+        @include ultimateluxury-text;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        @include ultimateroom-text;
+        margin-bottom: 2.9rem;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        &__links {
+            background-color: #FFFFFF;
+            overflow: visible;
+            padding: 1rem 1.5rem;
+            display: flex;
+            flex-direction: row;
+
+            a:nth-child(1) {
+                @include nav-items;
+                text-decoration: none;
+            }
+
+            a:nth-child(2) {
+                @include nav-items;
+                color: $gold;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.roomsPage {
+    padding: 3rem 1.2rem 0;
+
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__iconos {
+      text-align: center;
+
+      &__image {
+        position: relative;
+        transform: translateY(-50%);
+        z-index: 9;
+      }
+    }
+
+    &__title {
+      @include menu-subtitle;
+      text-align: center;
+      margin-top: -1.5rem;
+    }
+
+    &__description {
+      @include info-description;
+      text-align: center;
+      padding: 0 1.3rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      p:nth-child(1) {
+        @include price(1rem);
+        font-weight: bold;
+      }
+
+      p:nth-child(2) {
+        @include price(1rem);
+        color: #BDBDBD;
+        font-weight: bold;
+        margin-bottom: 3.2rem;
+      }
+    }
+}

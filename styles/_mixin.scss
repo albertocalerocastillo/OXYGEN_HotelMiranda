@@ -1,0 +1,60 @@
+@mixin nav-items {
+    font-family: "Archivo";
+    font-size: 16px;
+    font-weight: bold;
+    color:#222222
+}
+
+@mixin ultimateluxury-text {
+    font-family: 'Archivo';
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+}
+
+@mixin ultimateroom-text {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
+
+@mixin menu-subtitle {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.72px;
+    color: #222222;
+}
+
+@mixin info-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 24px;
+    color: #777777;
+}
+
+@mixin price($font-size) {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: ($font-size);
+    line-height: 43px;
+    text-align: center;
+    vertical-align: top;
+    color: $gold;
+}
