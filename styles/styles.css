@@ -10,6 +10,7 @@
   padding: 1rem;
   background-color: #FFFFFF;
   color: #111111;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2901960784);
   font-family: "Archivo", sans-serif;
 }
 .navbar.navbar-desplegado {
@@ -76,7 +77,6 @@
   cursor: pointer;
 }
 .navbar__desplegable {
-  margin-top: 0.2rem;
   margin-bottom: 1.4rem;
   display: none;
   position: absolute;
@@ -104,7 +104,7 @@
 .navbar__desplegable ul li a {
   font-size: 1rem;
   padding-top: 1.5rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.7rem;
   padding-left: 1.2rem;
   color: #111111;
   text-decoration: none;
@@ -113,7 +113,7 @@
 }
 
 .footer {
-  margin-top: 10rem;
+  margin-top: 4rem;
   width: 100%;
   display: block;
   position: relative;
