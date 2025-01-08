@@ -800,6 +800,260 @@
   font-weight: bold;
   margin-bottom: 3.2rem;
 }
+.relatedRooms__swiper {
+  position: relative;
+}
+.relatedRooms__swiper__img {
+  width: 100%;
+  padding: 0 1rem;
+}
+.relatedRooms__swiper__icons {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+.relatedRooms__swiper__info {
+  background-color: #ffffff;
+  padding-top: 3rem;
+  text-align: center;
+}
+.relatedRooms__swiper__info__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -0.72px;
+  color: #222222;
+  text-align: center;
+  margin-top: -1.5rem;
+}
+.relatedRooms__swiper__info__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 24px;
+  color: #777777;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.relatedRooms__swiper__info__price {
+  padding-top: 1rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #BEAD8E;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.relatedRooms__swiper__info__price a {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.offers__article {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.offers__article__photo {
+  position: relative;
+}
+.offers__article__photo__img {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.offers__article__photo__prices {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10%;
+  text-align: end;
+}
+.offers__article__photo__prices__old {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1.425rem;
+  line-height: 1.5rem;
+  text-decoration: line-through;
+  color: #BEAD8E;
+  margin-bottom: 0.6rem;
+}
+.offers__article__photo__prices__new {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2rem;
+  color: #DE5777;
+}
+.offers__article__photo__prices__old span {
+  font-size: 0.6875rem;
+  line-height: 0.75rem;
+  text-decoration: none;
+  text-decoration: line-through;
+}
+.offers__article__photo__prices__new span {
+  font-size: 0.6875rem;
+  line-height: 0.75rem;
+  text-decoration: none;
+}
+.offers__article__bedType {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 2.8px;
+  color: #777777;
+  padding: 0 2rem;
+  margin-bottom: 0.5rem;
+}
+.offers__article__bedTitle {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -1.44px;
+  color: #222222;
+  padding: 0 2rem;
+  margin-bottom: 1.2rem;
+}
+.offers__article__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #777777;
+  padding: 0 2.4rem;
+  margin-bottom: 1rem;
+}
+.offers__article__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-auto-flow: column;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0 2.4rem;
+  margin-bottom: 1rem;
+}
+.offers__article__container__item {
+  display: inline-block;
+  padding: 0.4rem 0;
+}
+.offers__article__container__item__icon {
+  display: inline-block;
+}
+.offers__article__container__item__text {
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #777777;
+}
+.offers__article__button {
+  width: 55%;
+  border: none;
+  border-radius: 0;
+  background: #BEAD8E;
+  padding: 1.4rem 0;
+  color: #FFFFFF;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 2.8px;
+  margin: 0 2.5rem;
+}
+
+.popularList {
+  text-align: center;
+  background-color: #222222;
+  margin: 3.5rem 0;
+  padding: 3rem 1rem;
+  position: relative;
+}
+.popularList__title {
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 2.8px;
+  color: #BEAD8E;
+  margin-bottom: 1rem;
+}
+.popularList__subtitle {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.popularList__swiper__img {
+  width: 100%;
+}
+.popularList__swiper__icons {
+  position: absolute;
+  bottom: 38%;
+  right: 10%;
+}
+.popularList__swiper__info {
+  background-color: #FFFFFF;
+  padding-top: 3rem;
+}
+.popularList__swiper__info__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -0.72px;
+  color: #222222;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.popularList__swiper__info__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 24px;
+  color: #777777;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.popularList__swiper__info__price {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #BEAD8E;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.popularList__swiper__info__price a {
+  text-decoration: none;
+  color: #BDBDBD;
+}
 
 .contact-cards-container {
   display: flex;
@@ -936,4 +1190,24 @@ html,
 
 body {
   min-width: 320px;
+}
+
+.swiper-button-prev::after {
+  background: #ffffff;
+  padding: 1rem;
+  color: #000000;
+  margin-bottom: 12rem;
+  z-index: 10;
+}
+
+.swiper-button-next::after {
+  background: #BEAD8E;
+  padding: 1rem;
+  color: #FFFFFF;
+  margin-bottom: 12rem;
+  z-index: 10;
+}
+
+:root {
+  --swiper-navigation-size: .5rem !important;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,216 @@
+@import "../mixin.scss";
+
+.offers {
+
+    &__article {
+        text-align: start;
+        margin-bottom: 2rem;
+
+        &__photo {
+            position: relative;
+
+            &__img {
+                width: 100%;
+                padding: 1rem;
+                margin-top: 2rem;
+            }
+
+            &__prices {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 10%;
+                text-align: end;
+
+                &__old {
+                    font-family: 'Archivo';
+                    font-weight: 700;
+                    font-size: 1.425rem;
+                    line-height: 1.5rem;
+                    text-decoration: line-through;
+                    color: #BEAD8E;
+                    margin-bottom: .6rem;
+                }
+
+                &__new {
+                    font-family: 'Archivo';
+                    font-weight: 700;
+                    font-size: 1.875rem;
+                    line-height: 2rem;
+                    color: #DE5777;
+                }
+
+                &__old {
+                    span {
+                        font-size: .6875rem;
+                        line-height: .75rem;
+                        text-decoration: none;
+                        text-decoration: line-through;
+                    }
+                }
+                &__new {
+                    span {
+                        font-size: .6875rem;
+                        line-height: .75rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &__bedType {
+            font-family: 'Archivo';
+            font-weight: 700;
+            font-size: .875rem;
+            line-height: 1rem;
+            letter-spacing: 2.8px;
+            color: #777777;
+            padding: 0 2rem;
+            margin-bottom: .5rem;
+        }
+
+        &__bedTitle {
+            font-family: 'Old Standard TT';
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            letter-spacing: -1.44px;
+            color: #222222;
+            padding: 0 2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        &__description {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: .875rem;
+            line-height: 1.5rem;
+            color: #777777;
+            padding: 0 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            grid-auto-flow: column;
+            gap: .4rem;
+            list-style: none;
+            padding: 0 2.4rem;
+            margin-bottom: 1rem;
+
+            &__item {
+                display: inline-block;
+                padding: .4rem 0;
+
+                &__icon {
+                    display: inline-block;
+                }
+
+                &__text {
+                    display: inline-block;
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.1rem;
+                    color: #777777;
+                }
+            }
+        }
+
+        &__button {
+            width: 55%;
+            border: none;
+            border-radius: 0;
+            background: #BEAD8E;
+            padding: 1.4rem 0;
+            color: #FFFFFF;
+            font-family: 'Archivo';
+            font-weight: 400;
+            font-size: .875rem;
+            letter-spacing: 2.8px;
+            margin: 0 2.5rem;
+        }
+    }
+}
+
+.popularList {
+    text-align: center;
+    background-color: #222222;
+    margin: 3.5rem 0;
+    padding: 3rem 1rem;
+    position: relative;
+
+
+    &__title {
+        font-family: 'Archivo';
+        font-weight: 500;
+        font-size: .875rem;
+        line-height: 1rem;
+        letter-spacing: 2.8px;
+        color: #BEAD8E;
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        font-family: 'Old Standard TT';
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: -.8px;
+        color: #ffffff;
+        margin-bottom: 3rem;
+    }
+
+    &__swiper {
+
+        &__img {
+            width: 100%;
+        }
+
+        &__icons {
+            position: absolute;
+            bottom: 38%;
+            right: 10%;
+        }
+
+        &__info {
+            background-color: $white;
+            padding-top: 3rem;
+
+            &__title {
+                @include menu-subtitle;
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+
+            &__description {
+                @include info-description;
+                font-size: 0.9rem;
+                text-align: center;
+                padding: 0 1.3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            &__price {
+                font-family: 'Archivo';
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                color: #BEAD8E;
+                padding-bottom: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #BDBDBD;
+                }
+            }
+        }
+    }
+}

@@ -320,6 +320,7 @@
 
 .relatedRooms {
     width: 100%;
+
     &__title {
         width: 100%;
         text-align: start;
@@ -386,5 +387,59 @@
               margin-bottom: 3.2rem;
             }
           }
+    }
+    &__swiper {
+        position: relative;
+
+        &__img {
+            width: 100%;
+            padding: 0 1rem;
+        }
+
+        &__icons {
+            position: absolute;
+            bottom: 35%;
+            right: 10%;
+        }
+
+        &__info {
+            background-color: #ffffff;
+            padding-top: 3rem;
+            text-align: center;
+
+            &__title {
+                @include menu-subtitle;
+                text-align: center;
+                margin-top: -1.5rem;
+            }
+
+            &__description {
+                @include info-description;
+                font-size: 0.9rem;
+                text-align: center;
+                padding: 0 1.6rem;
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            &__price {
+                padding-top: 1rem;
+                font-family: 'Archivo';
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                color: #BEAD8E;
+                padding-bottom: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #BDBDBD;
+                }
+            }
+        }
     }
 }

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooms Hotel Miranda</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/slider.js"></script>
 </head>
 
 <body>
@@ -30,7 +34,7 @@
             <ul>
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="#offers">Offers</a></li>
+                <li><a href="offers.html">Offers</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -172,17 +176,47 @@
         <section class="relatedRooms">
             <p class="relatedRooms__title">Related Rooms</p>
             <div class="relatedRooms__separador"></div>
-            <div class="relatedRooms__slider">
-                <img src="../images/relatedroom.jpg" class="relatedRooms__slider__img" />
-            </div>
-            <div class="relatedRooms__info">
-                <p class="relatedRooms__info__title">Minimal Duplex Room</p>
-                <p class="relatedRooms__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit,
-                    sed do eiusmod tempor.</p>
-                    <div class="roomsPage__info">
-                        <p>$345/Night</p>
-                        <p>Booking Now</p>
+            <div class="swiper relatedRooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/relatedroom.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../images/icons_mobile.png" class="relatedRooms__swiper__icons"/>
+                        <div class="relatedRooms__swiper__info">
+                            <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <div class="relatedRooms__swiper__info__price">
+                                <p>$345/Night</p>
+                                <p><a href="roomsDetails.html">Booking Now</a></p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <img src="../images/habitacion1.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../images/icons_mobile.png" class="relatedRooms__swiper__icons"/>
+                        <div class="relatedRooms__swiper__info">
+                            <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <div class="relatedRooms__swiper__info__price">
+                                <p>$345/Night</p>
+                                <p><a href="roomsDetails.html">Booking Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/relatedroom.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../images/icons_mobile.png" class="relatedRooms__swiper__icons"/>
+                        <div class="relatedRooms__swiper__info">
+                            <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <div class="relatedRooms__swiper__info__price">
+                                <p>$345/Night</p>
+                                <p><a href="roomsDetails.html">Booking Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
 
@@ -268,7 +302,5 @@
     </footer>
     
 </body>
-
-<script src="../scripts/navbar.js"></script>
 
 </html>

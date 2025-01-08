@@ -2,6 +2,7 @@
 @import './components/footer.scss';
 @import './pages/rooms.scss';
 @import './pages/roomsDetails.scss';
+@import './pages/offers.scss';
 @import './pages/contact.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
@@ -21,4 +22,23 @@ html,
 
 body {
     min-width: 320px
+}
+
+.swiper-button-prev::after {
+    background: #ffffff;
+    padding: 1rem;
+    color: #000000;
+    margin-bottom: 12rem;
+    z-index: 10;
+}
+
+.swiper-button-next::after {
+    background: $gold;
+    padding: 1rem;
+    color: $white;
+    margin-bottom: 12rem;
+    z-index: 10;
+}
+:root {
+    --swiper-navigation-size: .5rem !important;
 }

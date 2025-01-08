@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuImg = document.getElementById("menu-img");
     const desplegable = document.getElementById("desplegable");
 
-    const basePath = window.location.pathname.includes("rooms") || window.location.pathname.includes("contact") ? "../" : "./";
+    const basePath = window.location.pathname.includes("rooms") || window.location.pathname.includes("contact") || window.location.pathname.includes("offers")? "../" : "./";
 
     menuIcono.addEventListener("click", () => {
         desplegable.classList.toggle("activo");
