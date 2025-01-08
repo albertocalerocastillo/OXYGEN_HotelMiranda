@@ -1,0 +1,116 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+
+  .contact-cards-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    margin-top: 50px;
+
+    &__items {
+      &__img {
+        position: relative;
+        left: 35%;
+        z-index: 1;
+      }
+
+      &__icon {
+        position: relative;
+        bottom: 145px;
+        z-index: 2;
+      }
+
+      &__text {
+        position: relative;
+        bottom: 185px;
+        left: 65px;
+        z-index: 2;
+
+        &__title {
+          @include title-contact;
+          margin-bottom: 15px;
+        }
+
+        &__info {
+          @include text-contact;
+          color: #777777;
+          width: 200px;
+        }
+      }
+    }
+  }
+  .image {
+    &__container {
+      & img {
+        margin-top: -4rem;
+        object-fit: cover;
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .form {
+    margin: 50px 0;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__group {
+        position: relative;
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 10px;
+        pointer-events: none;
+    }
+
+    &__icon--message {
+        top: 18%;
+        position: absolute;
+        left: 10px;
+    }
+
+    &__input {
+        color: #777;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        height: 65px;
+        padding: 10px 10px 10px 40px;
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__button {
+        @include boton-dorado;
+        width: 60%;
+        max-width: 500px;
+        height: 65px;
+        text-transform: uppercase;
+        border-color: #f8f8f8;
+        margin-top: 20px;
+    }
+
+    #input__message {
+        height: 165px;
+    }
+
+    #input__message::placeholder {
+        position: relative;
+        bottom: 30%;
+    }
+}
