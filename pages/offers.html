@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="../scripts/navbar.js"></script>
-    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/slider.js" defer></script>
 </head>
 
 <body>
+
     <header class="navbar">
+
         <div class="navbar__menu" id="menu">
             <img src="../images/nav.png" alt="Menú" id="menu-img">
         </div>
+
         <div class="navbar__logo">
             <p class="navbar__logo__icon">H</p>
             <div class="navbar__logo__text">
@@ -32,12 +35,13 @@
 
         <nav class="navbar__desplegable" id="desplegable">
             <ul>
-                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="rooms.html">Rooms</a></li>
                 <li><a href="offers.html">Offers</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -55,7 +59,9 @@
         </section>
 
         <section class="offers">
-            <article class="offers__article">
+
+            <div class="offers__article">
+                
                 <div class="offers__article__photo">
                     <img src="../images/offersroom1.jpg" class="offers__article__photo__img" />
                     <div class="offers__article__photo__prices">
@@ -63,57 +69,58 @@
                         <p class="offers__article__photo__prices__new">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <p class="offers__article__bedType">DOUBLE BED</p>
-                <p class="offers__article__bedTitle">Luxury Double Bed</p>
+                <p class="offers__article__subtitle">DOUBLE BED</p>
+                <p class="offers__article__title">Luxury Double Bed</p>
                 <p class="offers__article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <div class="offers__article__container">
-                    <div class="offers__article__container__item">
-                        <img src="../images/airconditioner.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Air conditioner</p>
+                <div class="offers__article__list">
+                    <div class="offers__article__list__item">
+                        <img src="../images/airconditioner.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Air conditioner</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/breakfast.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Breakfast</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/breakfast.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Breakfast</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/cleaning.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Cleaning</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/cleaning.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Cleaning</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/grocery.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Grocery</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/grocery.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Grocery</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/shop.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Shop near</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/shop.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Shop near</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/wifi.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">High speed WiFi</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/wifi.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">High speed WiFi</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/kitchen.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Kitchen</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/kitchen.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Kitchen</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/shower.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Shower</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/shower.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Shower</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/bed.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Single bed</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/bed.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Single bed</p>
                     </div>
-                    <div class="offers__article__container__item">
-                        <img src="../images/towels.png" class="offers__article__container__item__icon" />
-                        <p class="offers__article__container__item__text">Towels</p>
+                    <div class="offers__article__list__item">
+                        <img src="../images/towels.png" class="offers__article__list__item__icon" />
+                        <p class="offers__article__list__item__text">Towels</p>
                     </div>
                 </div>
                 <button type="submit" class="offers__article__button">BOOK NOW</button>
-            </article>
-            <article class="offers__article">
+            </div>
+
+            <div class="offers__article">
                 <div class="offers__article__photo">
                     <img src="../images/offersroom2.jpg" class="offers__article__photo__img" />
                     <div class="offers__article__photo__prices">
@@ -121,57 +128,58 @@
                         <p class="offers__article__photo__prices__new">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <p class="offers__article__bedType">DOUBLE BED</p>
-                <p class="offers__article__bedTitle">Luxury Double Bed</p>
+                <p class="offers__article__subtitle">DOUBLE BED</p>
+                <p class="offers__article__title">Luxury Double Bed</p>
                 <p class="offers__article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <div class="offers__article__container">
-                        <div class="offers__article__container__item">
-                            <img src="../images/airconditioner.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Air conditioner</p>
+                    <div class="offers__article__list">
+                        <div class="offers__article__list__item">
+                            <img src="../images/airconditioner.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Air conditioner</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/breakfast.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Breakfast</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/breakfast.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Breakfast</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/cleaning.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Cleaning</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/cleaning.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Cleaning</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/grocery.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Grocery</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/grocery.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Grocery</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/shop.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Shop near</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/shop.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Shop near</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/wifi.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">High speed WiFi</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/wifi.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">High speed WiFi</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/kitchen.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Kitchen</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/kitchen.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Kitchen</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/shower.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Shower</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/shower.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Shower</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/bed.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Single bed</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/bed.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Single bed</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/towels.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Towels</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/towels.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Towels</p>
                         </div>
                     </div>
                 <button type="submit" class="offers__article__button">BOOK NOW</button>
-            </article>
-            <article class="offers__article">
+                </div>
+
+            <div class="offers__article">
                 <div class="offers__article__photo">
                     <img src="../images/offersroom3.jpg" class="offers__article__photo__img" />
                     <div class="offers__article__photo__prices">
@@ -179,57 +187,58 @@
                         <p class="offers__article__photo__prices__new">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <p class="offers__article__bedType">DOUBLE BED</p>
-                <p class="offers__article__bedTitle">Luxury Double Bed</p>
+                <p class="offers__article__subtitle">DOUBLE BED</p>
+                <p class="offers__article__title">Luxury Double Bed</p>
                 <p class="offers__article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <div class="offers__article__container">
-                        <div class="offers__article__container__item">
-                            <img src="../images/airconditioner.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Air conditioner</p>
+                    <div class="offers__article__list">
+                        <div class="offers__article__list__item">
+                            <img src="../images/airconditioner.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Air conditioner</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/breakfast.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Breakfast</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/breakfast.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Breakfast</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/cleaning.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Cleaning</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/cleaning.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Cleaning</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/grocery.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Grocery</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/grocery.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Grocery</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/shop.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Shop near</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/shop.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Shop near</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/wifi.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">High speed WiFi</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/wifi.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">High speed WiFi</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/kitchen.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Kitchen</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/kitchen.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Kitchen</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/shower.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Shower</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/shower.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Shower</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/bed.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Single bed</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/bed.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Single bed</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/towels.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Towels</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/towels.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Towels</p>
                         </div>
                     </div>
                 <button type="submit" class="offers__article__button">BOOK NOW</button>
-            </article>
-            <article class="offers__article">
+            </div>
+
+            <div class="offers__article">
                 <div class="offers__article__photo">
                     <img src="../images/offersroom4.png" class="offers__article__photo__img" />
                     <div class="offers__article__photo__prices">
@@ -237,56 +246,57 @@
                         <p class="offers__article__photo__prices__new">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <p class="offers__article__bedType">DOUBLE BED</p>
-                <p class="offers__article__bedTitle">Luxury Double Bed</p>
+                <p class="offers__article__subtitle">DOUBLE BED</p>
+                <p class="offers__article__title">Luxury Double Bed</p>
                 <p class="offers__article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <div class="offers__article__container">
-                        <div class="offers__article__container__item">
-                            <img src="../images/airconditioner.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Air conditioner</p>
+                    <div class="offers__article__list">
+                        <div class="offers__article__list__item">
+                            <img src="../images/airconditioner.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Air conditioner</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/breakfast.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Breakfast</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/breakfast.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Breakfast</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/cleaning.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Cleaning</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/cleaning.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Cleaning</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/grocery.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Grocery</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/grocery.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Grocery</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/shop.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Shop near</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/shop.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Shop near</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/wifi.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">High speed WiFi</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/wifi.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">High speed WiFi</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/kitchen.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Kitchen</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/kitchen.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Kitchen</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/shower.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Shower</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/shower.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Shower</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/bed.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Single bed</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/bed.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Single bed</p>
                         </div>
-                        <div class="offers__article__container__item">
-                            <img src="../images/towels.png" class="offers__article__container__item__icon" />
-                            <p class="offers__article__container__item__text">Towels</p>
+                        <div class="offers__article__list__item">
+                            <img src="../images/towels.png" class="offers__article__list__item__icon" />
+                            <p class="offers__article__list__item__text">Towels</p>
                         </div>
                     </div>
                 <button type="submit" class="offers__article__button">BOOK NOW</button>
-            </article>
+            </div>
+            
         </section>
 
         <section class="popularList">
@@ -315,7 +325,7 @@
                             </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="../images/habitacion1.jpg class="popularList__swiper__img" />
+                        <img src="../images/habitacion2.png" class="popularList__swiper__img" />
                         <img src="../images/icons_mobile.png" class="popularList__swiper__icons" />
                         <div class="popularList__swiper__info">
                             <p class="popularList__swiper__info__title">Minimal Duplex Room</p>

@@ -1,5 +1,7 @@
 @import './components/navbar.scss';
 @import './components/footer.scss';
+@import './pages/index.scss';
+@import './pages/aboutUs.scss';
 @import './pages/rooms.scss';
 @import './pages/roomsDetails.scss';
 @import './pages/offers.scss';
@@ -39,6 +41,11 @@ body {
     margin-bottom: 12rem;
     z-index: 10;
 }
+
+.swiper-pagination-bullet-active {
+    background-color: $gold !important;
+}
+
 :root {
     --swiper-navigation-size: .5rem !important;
 }

@@ -28,7 +28,7 @@
     color: #FFFFFF;
 }
 
-@mixin menu-subtitle {
+@mixin rooms-title {
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-size: 24px;
@@ -39,7 +39,7 @@
     color: #222222;
 }
 
-@mixin info-description {
+@mixin rooms-description {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -93,4 +93,90 @@
     &:hover {
         transform: scale(1.1);
     }
+}
+
+@mixin boton-learn {
+    font-family: 'Archivo';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@mixin text-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    vertical-align: top;
+    color: #FFFFFF;
+}
+
+@mixin section-title {
+    font-family: "Old Standard TT", serif;
+    font-size: 32px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: -0.9px;
+    font-weight: 400;
+}
+
+@mixin section-description {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: top;
+}
+
+@mixin intro-title {
+    font-family: "Archivo", sans-serif;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    color: $gold;
+}
+
+@mixin intro-description {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
+
+@mixin intro-text {
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    color: #c2c2c2;
+}
+
+@mixin achievements-text($font-size) {
+    font-size: $font-size;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
 }

@@ -1,4 +1,5 @@
 @import "../mixin.scss";
+@import "../variables.scss";
 
 .offers {
 
@@ -39,7 +40,7 @@
                     line-height: 2rem;
                     color: #DE5777;
                 }
-
+ 
                 &__old {
                     span {
                         font-size: .6875rem;
@@ -58,7 +59,7 @@
             }
         }
 
-        &__bedType {
+        &__subtitle {
             font-family: 'Archivo';
             font-weight: 700;
             font-size: .875rem;
@@ -69,7 +70,7 @@
             margin-bottom: .5rem;
         }
 
-        &__bedTitle {
+        &__title {
             font-family: 'Old Standard TT';
             font-weight: 400;
             font-size: 2.5rem;
@@ -90,7 +91,7 @@
             margin-bottom: 1rem;
         }
 
-        &__container {
+        &__list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(5, auto);
@@ -178,15 +179,16 @@
         &__info {
             background-color: $white;
             padding-top: 3rem;
+            margin-top: -0.5rem;
 
             &__title {
-                @include menu-subtitle;
+                @include rooms-title;
                 text-align: center;
                 margin-top: 0.5rem;
             }
 
             &__description {
-                @include info-description;
+                @include rooms-description;
                 font-size: 0.9rem;
                 text-align: center;
                 padding: 0 1.3rem;

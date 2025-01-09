@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="../scripts/navbar.js"></script>
-    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/slider.js" defer></script>
 </head>
 
 <body>
+
     <header class="navbar">
+
         <div class="navbar__menu" id="menu">
             <img src="../images/nav.png" alt="Menú" id="menu-img">
         </div>
+
         <div class="navbar__logo">
             <p class="navbar__logo__icon">H</p>
             <div class="navbar__logo__text">
@@ -32,48 +35,61 @@
 
         <nav class="navbar__desplegable" id="desplegable">
             <ul>
-                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="rooms.html">Rooms</a></li>
                 <li><a href="offers.html">Offers</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
+
         <section class="ultimate">
+
             <div>
                 <p class="ultimate__title">THE ULTIMATE LUXURY</p>
                 <h2 class="ultimate__description">Ultimate Room</h2>
             </div>
+
             <div class="ultimate__nav">
                 <span class="ultimate__nav__links">
                     <a href="../index.html">Home |&nbsp;</a>
                     <a>Room Details</a>
                 </span>
             </div>
+
         </section>
 
         <section class="roomData">
+
             <p class="roomData__subtitle">DOUBLE BED</p>
             <p class="roomData__title">Luxury Double Bed</p>
             <p class="roomData__price">$345<span>/Night</span></p>
             <img class="roomData__img" src="../images/roomdetails.jpg" />
+
         </section>
 
         <section class="checkAvailability">
+
             <p class="checkAvailability__title">Check Availability</p>
+
             <form class="checkAvailability__form">
+
                 <div class="checkAvailability__form__checkIn">
                     <p class="checkAvailability__form__checkIn__title">Check In</p>
                     <input class="checkAvailability__form__checkIn__input" type="date" pattern="\d{4}-\d{2}-\d{2}" />
                 </div>
+
                 <div class="checkAvailability__form__checkOut">
                     <p class="checkAvailability__form__checkOut__title">Check Out</p>
                     <input class="checkAvailability__form__checkOut__input" type="date" pattern="\d{4}-\d{2}-\d{2}" />
                 </div>
+
                 <button class="checkAvailability__form__button" type="submit">CHECK AVAILABILITY</button>
             </form>
+
             <p class="checkAvailability__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -85,11 +101,14 @@
                 ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                 consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
                 aliquam quaerat voluptatem.</p>
+
         </section>
 
         <section class="amenities">
+
             <p class="amenities__title">Amenities</p>
             <div class="amenities__separador"></div>
+
             <div class="amenities__list">
                 <div class="amenities__list__item">
                     <img src="../images/airconditioner.png" class="amenities__list__item__icon" />
@@ -148,36 +167,45 @@
                     <p class="amenities__list__item__text">Expert Team</p>
                 </div>
             </div>
+
             <div class="amenities__founder">
+
                 <div class="amenities__founder__photo">
                     <img src="../images/founder.png" alt="Founder Photo" class="amenities__founder__photo__image" />
                 </div>
+
                 <div class="amenities__founder__photo__tick">
                     <img src="../images/tick.png" class="amenities__founder__photo__tick__icon" />
                 </div>
+
                 <p class="amenities__founder__name">Rosalina D. William</p>
                 <p class="amenities__founder__status">FOUNDER, QUX CO.</p>
                 <p class="amenities__founder__description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                 </p>
+
             </div>
-            
             
         </section>
 
         <section class="cancellation">
+
             <p class="cancellation__title">Cancellation</p>
             <div class="cancellation__separador"></div>
             <p class="cancellation__text">Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. 
                 Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. 
                 Cancel up to 14 days to get a full refund.</p>
+
         </section>
 
         <section class="relatedRooms">
             <p class="relatedRooms__title">Related Rooms</p>
             <div class="relatedRooms__separador"></div>
+
             <div class="swiper relatedRooms__swiper">
+
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
                         <img src="../images/relatedroom.jpg" class="relatedRooms__swiper__img" />
                         <img src="../images/icons_mobile.png" class="relatedRooms__swiper__icons"/>
@@ -190,6 +218,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <img src="../images/habitacion1.jpg" class="relatedRooms__swiper__img" />
                         <img src="../images/icons_mobile.png" class="relatedRooms__swiper__icons"/>
@@ -202,8 +231,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
-                        <img src="../images/relatedroom.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../images/habitacion2.png" class="relatedRooms__swiper__img" />
                         <img src="../images/icons_mobile.png" class="relatedRooms__swiper__icons"/>
                         <div class="relatedRooms__swiper__info">
                             <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
@@ -214,28 +244,38 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+
             </div>
+
         </section>
 
     </main>
 
     <footer class="footer">
+
         <img class="footer__background" src="../images/footer_background.png" />
         <div class="footer__title">
+
             <div class="footer__title__logo">
                 <p class="footer__title__logo__content">H</p>
             </div>
+
             <div class="footer__title__text">
                 <p class="footer__title__text__hotel">HOTEL</p>
                 <p class="footer__title__text__miranda">MIRANDA</p>
             </div>
+
         </div>
+
         <p class="footer__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco
             laboris nisi.</p>
+
         <div class="footer__social">
             <div class="footer__social__item">
                 <img class="footer__social__item__icon" src="../images/facebook.png" />
@@ -253,6 +293,7 @@
                 <img class="footer__social__item__icon" src="../images/youtube.png" />
             </div>
         </div>
+        
         <div class="footer__services">
             <h3 class="footer__services__title">Services.</h3>
             <ul class="footer__services__lista">

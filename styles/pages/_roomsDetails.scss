@@ -46,13 +46,13 @@
 }
 
 .roomData {
-    background: #ffffff;
+    background: $white;
     text-align: start;
 
     &__subtitle {
         font-family: 'Archivo';
         font-weight: 700;
-        font-size: .875rem;
+        font-size: 0.9rem;
         line-height: 1rem;
         letter-spacing: 2.8px;
         color: #777777;
@@ -98,29 +98,29 @@
 
     &__title {
         font-weight: 700;
-        font-size: 1.125rem;
-        line-height: 1.25rem;
-        letter-spacing: -.54px;
-        color: #222222;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        letter-spacing: -0.54px;
+        color: $gris2;
         padding-bottom: 1.5rem;
         padding-top: 1.5rem;
     }
 
     &__form {
         padding: 0 2rem;
-        background: #ffffff;
+        background: $white;
         position: relative;
 
         &__checkIn,
         &__checkOut {
             width: 100%;
-            padding: .4rem 0;
+            padding: 0.4rem 0;
             text-align: start;
 
             &__title {
                 font-weight: 700;
-                font-size: .875rem;
-                color: #222222;
+                font-size: 0.9rem;
+                color: $gris2;
                 padding-bottom: 0.7rem;
             }
 
@@ -131,14 +131,6 @@
                 background: #F8F8F8;
                 color: #777777;
                 padding: 1.3rem 1.4rem;
-            }
-
-            &__input::placeholder {
-                font-family: 'Archivo';
-                font-weight: 400;
-                font-size: .875rem;
-                line-height: 1rem;
-                color: #777777;
             }
         }
 
@@ -152,7 +144,7 @@
             color: $white;
             font-family: 'Archivo';
             font-weight: 400;
-            font-size: .875rem;
+            font-size: 0.9rem;
             letter-spacing: 2.8px;
             margin-top: 0.7rem;
         }
@@ -162,7 +154,7 @@
         text-align: start;
         font-family: 'Roboto';
         font-weight: 400;
-        font-size: .875rem;
+        font-size: 0.9rem;
         line-height: 1.5rem;
         color: #777777;
         padding: 2.5rem 1.2rem;
@@ -176,8 +168,8 @@
         text-align: start;
         font-family: 'Old Standard TT';
         font-weight: 400;
-        font-size: 1.875rem;
-        line-height: 1.875rem;
+        font-size: 1.9rem;
+        line-height: 1.9rem;
         padding-left: 1rem;
         padding-top: 2rem;
     }
@@ -260,17 +252,17 @@
             font-size: 1.9rem;
             line-height: 1.9rem;
             letter-spacing: -.9px;
-            color: #222222;
+            color: $gris2;
             padding-top: 2rem;
         }
     
         &__status {
             font-family: 'Archivo';
             font-weight: 700;
-            font-size: .875rem;
+            font-size: 0.9rem;
             line-height: 1rem;
             letter-spacing: 2.8px;
-            color: #BEAD8E;
+            color: $gold;
             padding-top: 0.9rem;
         }
     
@@ -295,8 +287,8 @@
         text-align: start;
         font-family: 'Old Standard TT';
         font-weight: 400;
-        font-size: 1.875rem;
-        line-height: 1.875rem;
+        font-size: 1.9rem;
+        line-height: 1.9rem;
         padding-left: 1rem;
     }
 
@@ -326,8 +318,8 @@
         text-align: start;
         font-family: 'Old Standard TT';
         font-weight: 400;
-        font-size: 1.875rem;
-        line-height: 1.875rem;
+        font-size: 1.9rem;
+        line-height: 1.9rem;
         padding-left: 1rem;
     }
 
@@ -356,13 +348,13 @@
             font-weight: 400;
             font-size: 1.5rem;
             line-height: 1.5rem;
-            letter-spacing: -.72px;
+            letter-spacing: -0.72px;
         }
 
         &__description {
             font-family: 'Roboto';
             font-weight: 400;
-            font-size: .875rem;
+            font-size: 0.9rem;
             line-height: 1.5rem;
             color: #777777;
             margin-top: 1rem;
@@ -403,18 +395,18 @@
         }
 
         &__info {
-            background-color: #ffffff;
+            background-color: $white;
             padding-top: 3rem;
             text-align: center;
 
             &__title {
-                @include menu-subtitle;
+                @include rooms-title;
                 text-align: center;
                 margin-top: -1.5rem;
             }
 
             &__description {
-                @include info-description;
+                @include rooms-description;
                 font-size: 0.9rem;
                 text-align: center;
                 padding: 0 1.6rem;
@@ -428,13 +420,12 @@
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 1.1rem;
-                color: #BEAD8E;
+                color: $gold;
                 padding-bottom: 2rem;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 gap: 20px;
-
                 a {
                     text-decoration: none;
                     color: #BDBDBD;

@@ -1,0 +1,242 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.aboutUs {
+    text-align: center;
+
+    &__video {
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 2rem;
+        display: block;
+        height: 300px;
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+  }
+
+    &__title {
+        font-family: 'Old Standard TT';
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: -1.16px;
+        color: $gris2;
+        padding: 2rem 1rem;
+    }
+
+    &__iconos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+
+        &__background {
+            padding: 2rem 0;
+
+            &__icon {
+                width: auto;
+                height: 3.3rem;
+            }
+
+            &__text {
+                font-family: 'Archivo';
+                font-weight: 700;
+                font-size: 0.7rem;
+                letter-spacing: 2.4px;
+                color: $gris2;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+}
+
+.aboutUsRestaurant {
+    padding: 2.5rem;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__subtitle {
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        letter-spacing: 2.8px;
+        color: #777777;
+        padding: 1.5rem 0;
+    }
+
+    &__title {
+        font-family: 'Old Standard TT';
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 3.1rem;
+        letter-spacing: -1.5px;
+        color: $gris2;
+        padding-bottom: 2rem;
+    }
+
+    &__description {
+        font-family: 'Archivo';
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: #777777;
+        padding-bottom: 1rem;
+    }
+
+    &__button {
+        @include boton-dorado;
+        border: none;
+    }
+}
+
+.aboutUsFacilities {
+    background: $gris2;
+    padding: 1rem;
+    text-align: center;
+
+    &__title {
+        font-family: 'Archivo';
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1rem;
+        letter-spacing: 2.8px;
+        color: $white;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+    }
+
+    &__subtitle {
+        font-family: 'Old Standard TT';
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 3.75rem;
+        letter-spacing: -1.2px;
+        color: $white;
+        padding-bottom: 2rem;
+    }
+
+    &__swiper {
+        padding: 1rem;
+        text-align: start;
+
+        &__slide {
+            position: relative;
+            background: #292929;
+            padding: 1rem;
+            margin-bottom: 3rem;
+
+            &__background {
+                position: absolute;
+                color: $gris2;
+                font-size: 7.5rem;
+                font-weight: 700;
+                line-height: 8.1rem;
+                top: 0;
+                right: 5%;
+            }
+
+            &__icon {
+                padding: 3rem 1rem;
+            }
+
+            &__title {
+                font-family: 'Old Standard TT';
+                font-size: 1.9rem;
+                font-weight: 400;
+                line-height: 1.9rem;
+                letter-spacing: -0.9px;
+                color: $white;
+                padding-bottom: 2rem;
+            }
+
+            &__text {
+                font-family: 'Archivo';
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                color: $white;
+                padding-right: 2rem;
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
+
+.aboutUsCounter {
+    padding: 3rem 0.5rem;
+    padding-bottom: 0rem;
+
+    &__title {
+        font-family: 'Archivo';
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1rem;
+        letter-spacing: 2.8px;    
+        color: #777777;   
+        padding-bottom: 1.5rem; 
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+    }
+
+    &__subtitle {
+        font-family: 'Old Standard TT';
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 3.75rem;
+        letter-spacing: -1.2px;
+        color: $gris2;
+        padding-bottom: 2rem;
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+    }
+
+    &__funFacts {
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 1rem;
+
+            &__text {
+                margin-top: 1.5rem;
+                margin-right: 0.5rem;
+                font-family: 'Old Standard TT';
+                font-size: 3.7rem;
+                font-weight: 400;
+                line-height: 2rem;
+                letter-spacing: -1.8px;               
+
+                span {
+                    font-family: 'Roboto';
+                    font-size: 0.9rem;
+                    font-weight: 400;                
+                    color: #777777;
+                    line-height: 1rem;
+                    letter-spacing: 0px;               
+                }
+            }
+        }
+    }
+
+    &__swiper {
+
+        &__slide {
+            padding: 2rem 1rem;
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
