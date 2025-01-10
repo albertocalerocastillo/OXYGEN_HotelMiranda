@@ -240,3 +240,90 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+
+
+    .ultimate {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-bottom: 30px;
+    }
+
+    .aboutUs {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px auto;
+        padding: 30px 15px;
+    
+        &__video {
+            width: 100%;
+            padding-top: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 2rem;
+            display: block;
+            height: 500px;
+    
+            iframe {
+                width: 100%;
+                border: none;
+            }
+      }
+
+        &__title {
+          font-size: 55px;
+          letter-spacing: -2.16px;
+          padding: 0px 45px;
+          margin-top: 65px;
+          line-height: 4rem;
+        }
+
+        &__iconos {
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    
+      .aboutUsRestaurant {
+        width: 70%;
+        display: grid;
+        margin: 30px auto;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    
+        &__img {
+          display: flex;
+          align-items: stretch;
+          margin-bottom: 0px;
+        }
+      }
+
+    .aboutUsFacilities {
+      &__swiper {
+        width: 90%;
+        display: grid;
+        margin: 25px auto;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+      
+    }
+  .aboutUsCounter {
+      width: 70%;
+      margin: 100px auto 50px;
+  
+      &__funFacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 25px;
+      }
+    }
+}

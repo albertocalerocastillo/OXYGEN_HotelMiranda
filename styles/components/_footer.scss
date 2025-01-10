@@ -200,3 +200,36 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+
+      &__copyright {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      &__services {
+
+        &__lista {
+            display: flex;
+            justify-content: space-between;
+            min-width: 300px;
+
+            &__item {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    }
+  
+    .container {
+      flex: 1;
+      max-width: 330px;
+    }
+}

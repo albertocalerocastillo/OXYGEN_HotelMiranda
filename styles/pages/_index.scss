@@ -492,11 +492,11 @@
     }
 }
 
-.menu__achievements {
+.menu__logros {
     background-color: $gris2;
     padding-top: 48px;
 
-    .menu__achievements__box {
+    .menu__logros__box {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -511,19 +511,19 @@
       &--text {
         p {
           &:nth-child(1) {
-            @include achievements-text(60px);
+            @include logros-text(60px);
             color: #ffffff;
             display: inline;
           }
 
           &:nth-child(2) {
-            @include achievements-text(14px);
+            @include logros-text(14px);
             color: #ffffff;
             display: inline;
           }
 
           &:nth-child(3) {
-            @include achievements-text(16px);
+            @include logros-text(16px);
             color: #999999;
             margin-bottom: 48px;
           }
