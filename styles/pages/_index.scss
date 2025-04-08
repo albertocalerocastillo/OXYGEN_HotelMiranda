@@ -531,3 +531,101 @@
       }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+
+  .ultimate {
+    display: flex;
+    flex-direction: column;
+    background-color: $gris;
+    color: #FFFFFF;
+    margin-top: 4.5rem; 
+    padding-top: 4.6rem;
+    padding-bottom: 4.6rem;
+    padding-left: 10rem;
+
+    &__title--index {
+        @include ultimateluxury-text;
+        margin-left: 18.5rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1rem;
+        font-size: 10px;
+    }
+
+    &__description--index {
+        @include ultimateroom-text;
+        margin-left: 18rem;
+        margin-right: 63rem;
+        margin-bottom: 0rem;
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    &__buttons {
+        padding-bottom: 5rem;
+        margin-left: 18rem;
+
+        .ultimate__button--primary {
+          @include boton-dorado;
+          width: 200px;
+          border: $gold;
+          margin-top: 24px;
+          display: inline-block;
+          text-decoration: none;
+          padding: 22px 0;
+      
+        }
+  
+        .ultimate__button--secondary {
+          @include boton-learn;
+          width: 200px;
+          margin-top: 24px;
+          margin-left: 16px;
+          display: inline-block;
+          text-decoration: none;
+          border: solid 1px #cfcfcf98;
+          padding: 22px 0;
+        }
+    }
+}
+
+.availability {
+  display: flex;
+  flex-direction: row;
+  background-color: $gris2;
+  padding-left: 20px;
+
+  &__label {
+      @include text-label;
+      margin: 35px 0px 10px;
+      margin-left: 18rem;
+  }
+
+  &__input {
+      margin-left: 17.5rem;
+      width: 90%;
+      max-width: 350px;
+      border: none;
+      border-bottom: 2px solid $gold;
+      background-color: $gris2;
+      color: #686868;
+      padding: 0.4rem;
+      cursor: pointer;
+  }
+
+  .availability__input::-webkit-calendar-picker-indicator {
+      order: -1;
+      filter: invert(0.5) sepia(1);
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+  }
+
+  &__button {
+      margin-left: 25%;
+      @include boton-dorado;
+      width: 250px;
+  }
+}
+
+}

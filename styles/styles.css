@@ -933,6 +933,156 @@
   margin-bottom: 48px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .ultimate {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    color: #FFFFFF;
+    margin-top: 4.5rem;
+    padding-top: 4.6rem;
+    padding-bottom: 4.6rem;
+    padding-left: 10rem;
+  }
+  .ultimate__title--index {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+    margin-left: 18.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    font-size: 10px;
+  }
+  .ultimate__description--index {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-left: 18rem;
+    margin-right: 63rem;
+    margin-bottom: 0rem;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .ultimate__buttons {
+    padding-bottom: 5rem;
+    margin-left: 18rem;
+  }
+  .ultimate__buttons .ultimate__button--primary {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 200px;
+    border: #BEAD8E;
+    margin-top: 24px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 22px 0;
+  }
+  .ultimate__buttons .ultimate__button--primary:hover {
+    transform: scale(1.1);
+  }
+  .ultimate__buttons .ultimate__button--secondary {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 200px;
+    margin-top: 24px;
+    margin-left: 16px;
+    display: inline-block;
+    text-decoration: none;
+    border: solid 1px rgba(207, 207, 207, 0.5960784314);
+    padding: 22px 0;
+  }
+  .ultimate__buttons .ultimate__button--secondary:hover {
+    transform: scale(1.1);
+  }
+  .availability {
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+    padding-left: 20px;
+  }
+  .availability__label {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    vertical-align: top;
+    color: #FFFFFF;
+    margin: 35px 0px 10px;
+    margin-left: 18rem;
+  }
+  .availability__input {
+    margin-left: 17.5rem;
+    width: 90%;
+    max-width: 350px;
+    border: none;
+    border-bottom: 2px solid #BEAD8E;
+    background-color: #222222;
+    color: #686868;
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+  .availability .availability__input::-webkit-calendar-picker-indicator {
+    order: -1;
+    filter: invert(0.5) sepia(1);
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+  .availability__button {
+    margin-left: 25%;
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 250px;
+  }
+  .availability__button:hover {
+    transform: scale(1.1);
+  }
+}
 .aboutUs {
   text-align: center;
 }
