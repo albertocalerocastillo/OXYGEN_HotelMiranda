@@ -4,7 +4,7 @@
 
 **Web de un hotel de lujo maquetada desde cero con HTML semántico, SCSS y sliders con Swiper.**
 
-Proyecto del bootcamp Full Stack de OXYGEN Academy · Sprint 1
+Proyecto del Training React Full Stack de OXYGEN · Sprint 1
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
@@ -24,7 +24,7 @@ Proyecto del bootcamp Full Stack de OXYGEN Academy · Sprint 1
 
 ## Qué es
 
-Hotel Miranda es la web estática de un hotel ficticio, construida a partir de un diseño dado en el primer sprint del bootcamp. El objetivo era traducir un diseño a código fiel, con varias páginas enlazadas entre sí, primero en móvil y después adaptado a escritorio.
+Hotel Miranda es la web estática de un hotel ficticio, construida a partir de un diseño dado en el primer sprint del training. El objetivo era traducir un diseño a código fiel, con varias páginas enlazadas entre sí, primero en móvil y después adaptado a escritorio.
 
 ## Funcionalidades
 
